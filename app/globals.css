@@ -131,3 +131,16 @@
   background-color: var(--color-accent) !important;
   color: var(--color-accent-foreground) !important;
 }
+
+.sidebartrigger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebartrigger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+}

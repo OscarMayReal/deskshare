@@ -1,7 +1,7 @@
 
 "use client";
 import "@livekit/components-styles";
-import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupLabel, SidebarMenuButton, SidebarHeader, SidebarProvider } from "@/components/ui/sidebar";
+import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupLabel, SidebarMenuButton, SidebarHeader, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { LinkIcon, ScreenShareIcon, ScreenShareOffIcon, ShareIcon, TextIcon, XIcon } from "lucide-react";
 import { GridLayout, LiveKitRoom, useLocalParticipant, useParticipantTracks, useRoomContext, useTracks, VideoConference, VideoTrack } from '@livekit/components-react';
 import { useEffect, useState } from "react";
@@ -61,6 +61,7 @@ function LiveKitMain({ state }: { state: 'waiting' | 'connecting' | 'connected' 
     ]);
     var { toggle: toggleScreenShare, enabled: screenShareEnabled } = useTrackToggle({ source: Track.Source.ScreenShare });
     return <SidebarProvider className="flex flex-row fixed w-screen h-screen top-0 left-0">
+        <SidebarTrigger className="sidebartrigger" />
         <Sidebar>
             <SidebarContent className="gap-0">
                 <SidebarHeader className="p-4 pb-2">
