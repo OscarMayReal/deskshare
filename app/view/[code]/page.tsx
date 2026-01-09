@@ -77,7 +77,7 @@ function LiveKitMain({ state }: { state: 'waiting' | 'connecting' | 'connected' 
             <div className="text-lg text-muted-foreground" style={{
                 marginLeft: 16
             }}>
-                DeskSpace
+                DeskShare
             </div>
             <div className="flex-1" />
             <Button onClick={() => {
