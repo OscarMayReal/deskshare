@@ -17,7 +17,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "DeskShare",
   description: "DeskShare - Simple, free screen sharing",
-
+  twitter: {
+    card: "summary_large_image",
+    title: "DeskShare",
+    description: "DeskShare - Simple, free screen sharing",
+    images: ["https://deskshare.qplus.cloud/banner.png"],
+  },
+  openGraph: {
+    siteName: "DeskShare",
+    description: "DeskShare - Simple, free screen sharing",
+    title: "DeskShare - Simple, free screen sharing",
+    url: "https://deskshare.qplus.cloud",
+    images: ["https://deskshare.qplus.cloud/banner.png"],
+  }
 };
 
 export default function RootLayout({
