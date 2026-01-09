@@ -91,7 +91,7 @@ function PresentDialog({ auth }: { auth: AuthState }) {
 
 function WhyDialog() {
     return <Dialog>
-        <span className="text-muted-foreground">A free service - <DialogTrigger><p className="hover:underline cursor-pointer">Learn more</p></DialogTrigger></span>
+        <span className="text-muted-foreground text-center">A free service - <DialogTrigger><p className="hover:underline cursor-pointer">Learn more</p></DialogTrigger>.<br />Open Source - <a href="https://github.com/oscarmayreal/deskshare" className="hover:underline cursor-pointer">GitHub</a>.<br />Developed by <a href="https://github.com/oscarmayreal" className="hover:underline cursor-pointer">Oscar May</a></span>
         <DialogContent>
             <DialogHeader className="hidden">
                 <DialogTitle>Why DeskShare?</DialogTitle>

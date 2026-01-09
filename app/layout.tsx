@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "DeskShare",
   description: "DeskShare - Simple, free screen sharing",
+
 };
 
 export default function RootLayout({
